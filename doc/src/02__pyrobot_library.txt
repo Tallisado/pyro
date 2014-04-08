@@ -14,5 +14,5 @@ ${NEO_TITLE}        ADTRAN Neo
 *** Test Cases ***
 Test NEO Login Library
 	Open Pyro Browser
-	Login Sencha    		3011    1234    settingsButton-btnIconEl
+	Sencha Login     		3011    1234    settingsButton-btnIconEl
     Title Should Be         ${NEO_TITLE} 

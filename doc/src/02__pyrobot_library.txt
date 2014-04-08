@@ -1,0 +1,18 @@
+*** Settings ***
+Suite Teardown    Close Browser
+Library           Selenium2Library
+Library           PyroLibrary
+Library           Collections
+Documentation     Testing library
+Metadata          Version                            1.1
+Metadata          More Info                          For more information about Pyrobot see https://github.com/Tallisado/pyro
+Force Tags        PyroUnitTest
+
+*** Variables ***
+${NEO_TITLE}        ADTRAN Neo
+
+*** Test Cases ***
+Test NEO Login Library
+	Open Pyro Browser
+	Login Sencha    		3011    1234    settingsButton-btnIconEl
+    Title Should Be         ${NEO_TITLE} 
